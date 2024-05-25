@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Logger</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            padding: 5px;
+        }
+        .button-container{
+            display: flex;
+            flex-direction: row;
+            padding: 2px;
+        }
+        #log, #state{
+            width:500px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 3px;
+            padding: 10px;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-right: 20px;
+            background-color: rgb(121, 224, 190);
+        }
+        #start{
+            width: 200px;
+            height: 50px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 3px;
+            background-color: rgb(79, 245, 79);
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            margin-right: 25px;
+        }
+        #stop{
+            width: 200px;
+            height: 50px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 3px;
+            background-color: rgb(204, 41, 41);
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="border: 2px solid black; border-radius: 2px; padding: 5px;">Key Logger</h1>
+        <p>This Website gives the info of all the keys you pressed in your KeyBoard</p>
+    
+    <div class="button-container">
+        <button id="start" onclick="active()"> Start Logging</button>
+        <button id="stop" onclick="active()">Stop Logging</button>
+    </div>
+    <div class="button-container">
+        <div id="log"> </div>
+        <div id="state"> </div>
+    </div>
+</div>
+<script src="script.js" ></script>
+</body>
+</html>
